@@ -14,7 +14,7 @@ driver <- rD$client
 # first page to go
 driver$navigate("https://genius.com/Babymetal-shanti-shanti-shanti-lyrics")
 
-for(i in 901:1283) {
+for(i in 1:nrow(music) {
   tryCatch({
     # driver$navigate("https://genius.com")
     # next song
